@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Header from '@/app/components/header';
+import Header from "@/app/components/header";
 import NavBar from "./components/navBar";
 import HeroImg from "./components/heroImg";
 
@@ -7,9 +6,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <NavBar/>
+      <NavBar />
       <div className="overflow-container">
-        <HeroImg/>
+        <HeroImg />
         <footer>This is the footer</footer>
       </div>
     </main>
