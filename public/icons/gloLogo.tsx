@@ -2,10 +2,10 @@ export default function GloLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="70"
+      width="65"
       zoomAndPan="magnify"
       viewBox="6 10 25 18"
-      height="70"
+      height="65"
       preserveAspectRatio="xMidYMid meet"
       version="1.0"
     >

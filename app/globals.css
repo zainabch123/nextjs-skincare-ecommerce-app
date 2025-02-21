@@ -2,25 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-main {
-  height: 100vh;
-  /* grid-template-rows: 70px 40px 1fr; */
-}
 
 
-/* .nav-bar {
-  display: grid;
-  grid-template-columns: repeat(5, 100px);
-  justify-content: center;
-  align-content: center;
-}
-
-.nav-bar a {
-  text-align: center;
-} */

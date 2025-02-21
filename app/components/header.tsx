@@ -6,7 +6,7 @@ import BasketIcon from "../../public/icons/basketIcon";
 
 export default function Header() {
   return (
-    <header className="bg-[#ebe6dc] grid grid-cols-[200px_1fr_180px] justify-items-center items-center h-[75px] px-4 ">
+    <header className="bg-[#ebe6dc] grid grid-cols-[200px_1fr_200px] justify-items-center items-center px-4 ">
       {/* Language Menu */}
       <div>
         <a href="#" className="text-black">
