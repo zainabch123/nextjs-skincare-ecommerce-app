@@ -1,19 +1,19 @@
 export default function NavBar() {
   return (
-    <nav className="nav-bar">
-      <a href="best-sellers" style={{ color: "black" }}>
+    <nav className="h-[40px] grid grid-cols-[100px_100px_100px_100px_100px] justify-center content-center">
+      <a href="best-sellers" className="text-center">
         Best Sellers
       </a>
-      <a href="face" style={{ color: "black" }}>
+      <a href="face" className="text-center">
         Face
       </a>
-      <a href="body" style={{ color: "black" }}>
+      <a href="body" className="text-center">
         Body
       </a>
-      <a href="hair" style={{ color: "black" }}>
+      <a href="hair" className="text-center">
         Hair
       </a>
-      <a href="sets" style={{ color: "black" }}>
+      <a href="sets" className="text-center">
         Sets
       </a>
     </nav>
