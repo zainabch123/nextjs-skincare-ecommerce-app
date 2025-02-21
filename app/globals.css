@@ -11,55 +11,9 @@
 main {
   height: 100vh;
   display: grid;
-  grid-template-rows: 70px 40px 1fr;
+  /* grid-template-rows: 70px 40px 1fr; */
 }
 
-header {
-  position: relative;
-  /* background-color: #f6f4f0; */
-  background-color: rgb(235, 230, 220);
-  display: grid;
-  grid-template-columns: 202px 1fr 250px;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
-
-.login-portal {
-  position: absolute;
-  z-index: 10;
-  top: 80px;
-  right: 10px;
-}
-
-.user-panel {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-
-.user-panel li {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.language-options-menu {
-  padding: 10px;
-}
-
-.basket-quantitiy-icon {
-  position: absolute;
-  font-size: 0.75rem;
-  top: 40px;
-  right: 35px;
-  border-radius: 50%;
-  background-color: black;
-  color: white;
-  width: 17px;
-  height: 17px;
-  text-align: center;
-  align-content: center;
-}
 
 .nav-bar {
   display: grid;

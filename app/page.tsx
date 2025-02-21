@@ -9,6 +9,7 @@ export default function Home() {
       <NavBar />
       <div className="overflow-container">
         <HeroImg />
+
         <footer>This is the footer</footer>
       </div>
     </main>
