@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <nav className="h-[40px] grid grid-cols-[100px_100px_100px_100px_100px] justify-center content-center">
+    <nav className="flex flex-wrap justify-center items-center h-[40px] px-4 gap-x-9">
       <a href="best-sellers" className="text-center">
         Best Sellers
       </a>

@@ -10,7 +10,6 @@
 
 main {
   height: 100vh;
-  display: grid;
   /* grid-template-rows: 70px 40px 1fr; */
 }
 
