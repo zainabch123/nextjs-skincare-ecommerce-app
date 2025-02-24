@@ -1,6 +1,7 @@
 import Header from "@/app/components/header";
 import NavBar from "./components/navBar";
 import HeroImg from "./components/heroImg";
+import Carousel from "./components/carousel";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <NavBar />
       <div className="overflow-scroll overflow-x-hidden">
         <HeroImg />
-
+        <Carousel/>
         <footer>This is the footer</footer>
       </div>
     </main>
