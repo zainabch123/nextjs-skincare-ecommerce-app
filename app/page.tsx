@@ -10,7 +10,7 @@ export default function Home() {
       <NavBar />
       <div className="overflow-scroll overflow-x-hidden">
         <HeroImg />
-        <Carousel/>
+        <Carousel />
         <footer>This is the footer</footer>
       </div>
     </main>

@@ -25,8 +25,7 @@ export default function Carousel() {
                 </div>
                 <div className="text-center p-[10px] text-base">
                   <h3>{product.name}</h3>
-                  <p>{product.rating.toFixed(1)}</p>
-                  <p>£{product.price.toFixed(2)}</p>
+
                 </div>
                 <div className="carousel-card-button">
                   <button className="p-[7px] bg-black text-white w-[140px] rounded-[12px] text-sm hover:bg-stone-400">
