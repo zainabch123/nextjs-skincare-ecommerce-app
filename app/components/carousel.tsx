@@ -29,7 +29,7 @@ export default function Carousel() {
                   <p>£{product.price.toFixed(2)}</p>
                 </div>
                 <div>
-                  <button className=" bg-black text-white w-[140px] rounded-[12px] text-sm hover:bg-stone-400">
+                  <button className="p-[7px] bg-black text-white w-[140px] rounded-[12px] text-sm hover:bg-stone-400">
                     Add To Bag
                   </button>
                 </div>
