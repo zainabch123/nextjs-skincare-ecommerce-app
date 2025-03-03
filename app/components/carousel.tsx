@@ -19,8 +19,6 @@ const carouselRef = useRef<HTMLUListElement>(null);
     }
   };
   return (
-    <section className="text-center justify-items-center pt-[50px] pr-[100px] pl-[100px]">
-      <h1 className="text-2xl font-bold">New In</h1>
       <div className="flex relative items-center max-w-full scroll-smooth">
         <button
           className="p-[30px] rounded-[15px] opacity-75 font-semibold text-4xl bg-stone-200 hover:bg-stone-100"
@@ -66,6 +64,5 @@ const carouselRef = useRef<HTMLUListElement>(null);
           {">"}
         </button>
       </div>
-    </section>
   );
 }

@@ -1,7 +1,9 @@
 import Header from "@/app/components/header";
 import NavBar from "./components/navBar";
 import HeroImg from "./components/heroImg";
-import Carousel from "./components/carousel";
+import NewInSection from "./components/newInSection";
+import TrendingSection from "./components/trendingSection";
+import RecentlyViewedSection from "./components/recentlyViewedSection";
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
       <NavBar />
       <div className="overflow-scroll overflow-x-hidden">
         <HeroImg />
-        <Carousel />
+        <NewInSection />
+        <TrendingSection/>
+        <RecentlyViewedSection />
         <footer>This is the footer</footer>
       </div>
     </main>
