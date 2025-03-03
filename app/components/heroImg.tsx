@@ -10,6 +10,7 @@ export default function HeroImg() {
         width={5998}
         height={2608}
         alt="Skincare Hero Image"
+        priority
       />
     </section>
   );
