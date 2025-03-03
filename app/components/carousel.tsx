@@ -5,7 +5,7 @@ import Image from "next/image";
 import productData from "../lib/data";
 
 export default function Carousel() {
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     if (carouselRef.current) {
