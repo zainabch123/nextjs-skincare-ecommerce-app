@@ -7,7 +7,17 @@ import productData from "../lib/data";
 export default function Carousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft -= 760;
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft += 760;
+    }
+  };
   return (
     <section className="text-center justify-items-center pt-[50px] pr-[100px] pl-[100px]">
       <h1 className="text-2xl font-bold">New In</h1>
