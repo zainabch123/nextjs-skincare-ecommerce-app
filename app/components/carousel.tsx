@@ -1,15 +1,37 @@
+"use client";
+
+import {useRef} from "react";
 import Image from "next/image";
 import productData from "../lib/data";
 
 export default function Carousel() {
+ const carouselRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft -= 760; // Adjust based on image width
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft += 760;
+    }
+  };
   return (
     <section className="text-center justify-items-center pt-[50px] pr-[100px] pl-[100px]">
       <h1 className="text-2xl font-bold">New In</h1>
-      <div className="flex relative items-center max-w-full">
-        <button className="p-[30px] rounded-[15px] opacity-75 font-semibold text-4xl bg-stone-200 hover:bg-stone-100">
+      <div className="flex relative items-center max-w-full scroll-smooth">
+        <button
+          className="p-[30px] rounded-[15px] opacity-75 font-semibold text-4xl bg-stone-200 hover:bg-stone-100"
+          onClick={scrollLeft}
+        >
           {"<"}
         </button>
-        <ul className="flex flex-row max-w-[1150px] m-auto scroll-smooth overflow-hidden p-[20px] gap-[30px]">
+        <ul
+          className="flex flex-row max-w-[1150px] m-auto scroll-smooth overflow-hidden p-[20px] gap-[30px]"
+          ref={carouselRef}
+        >
           {productData.map((product, index) => {
             return (
               <li
@@ -37,7 +59,10 @@ export default function Carousel() {
             );
           })}
         </ul>
-        <button className="p-[30px] rounded-[15px] opacity-75 font-semibold text-4xl bg-stone-200 hover:bg-stone-100">
+        <button
+          className="p-[30px] rounded-[15px] opacity-75 font-semibold text-4xl bg-stone-200 hover:bg-stone-100"
+          onClick={scrollRight}
+        >
           {">"}
         </button>
       </div>
