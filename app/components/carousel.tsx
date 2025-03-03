@@ -5,11 +5,11 @@ import Image from "next/image";
 import productData from "../lib/data";
 
 export default function Carousel() {
- const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollLeft -= 760; // Adjust based on image width
+      carouselRef.current.scrollLeft -= 760;
     }
   };
 
