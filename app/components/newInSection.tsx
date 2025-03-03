@@ -1,4 +1,9 @@
 import Carousel from "./carousel";
+// import { BasketItem } from "../lib/definitions";
+
+// type NewInSectionProps = {
+//   addToBasket: (item: BasketItem) => void; 
+// };
 
 export default function NewInSection() {
     return (

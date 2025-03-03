@@ -1,6 +1,5 @@
 "use client"
 
-// import Image from "next/image";
 import { useState } from "react";
 
 import Header from "@/app/components/header";
@@ -9,20 +8,22 @@ import NavBar from "./components/navBar";
 import NewInSection from "./components/newInSection";
 import TrendingSection from "./components/trendingSection";
 import RecentlyViewedSection from "./components/recentlyViewedSection";
-// import heroImg from "../public/heroImages/heroImg9.jpg";
+import { BasketItem } from "./lib/definitions";
 
 export default function Home() {
-  const [basket, setBasket] = useState([]);
+   const [basket, setBasket] = useState<BasketItem[]>([]);
 
-  console.log(basket)
-  console.log(setBasket)
+   console.log(setBasket)
+  // const addToBasket = (item: BasketItem) => {
+  //   setBasket([...basket, item]);
+  // };
   return (
     <main className="h-screen grid grid-rows-[75px_40px_1fr]">
-      <Header />
+      <Header basket={basket}/>
       <NavBar />
       <div className="overflow-scroll overflow-x-hidden">
         <HeroImg/>
-        <NewInSection />
+        <NewInSection /*addToBasket={addToBasket}*/ />
         <TrendingSection />
         <RecentlyViewedSection />
         <footer>This is the footer</footer>

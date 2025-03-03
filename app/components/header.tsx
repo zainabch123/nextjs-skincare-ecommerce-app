@@ -3,8 +3,16 @@ import ProfileIcon from "../../public/icons/profileIcon";
 import SearchIcon from "../../public/icons/searchIcon";
 import FavouritesIcon from "../../public/icons/favouritesIcon";
 import BasketIcon from "../../public/icons/basketIcon";
+import { BasketItem } from "../lib/definitions";
 
-export default function Header() {
+type HeaderProps = {
+  basket: BasketItem[]; 
+};
+
+
+const Header = ({ basket }: HeaderProps) => {
+
+  console.log(basket)
   return (
     <header className="bg-[#ebe6dc] grid grid-cols-[200px_1fr_200px] justify-items-center items-center px-4 ">
       <div>
@@ -35,3 +43,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
