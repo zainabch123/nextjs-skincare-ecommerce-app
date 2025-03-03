@@ -1,14 +1,15 @@
 "use client"
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useState } from "react";
 
 import Header from "@/app/components/header";
+import HeroImg from "./components/heroImg";
 import NavBar from "./components/navBar";
 import NewInSection from "./components/newInSection";
 import TrendingSection from "./components/trendingSection";
 import RecentlyViewedSection from "./components/recentlyViewedSection";
-import heroImg from "../public/heroImages/heroImg9.jpg";
+// import heroImg from "../public/heroImages/heroImg9.jpg";
 
 export default function Home() {
   const [basket, setBasket] = useState([]);
@@ -20,16 +21,7 @@ export default function Home() {
       <Header />
       <NavBar />
       <div className="overflow-scroll overflow-x-hidden">
-        <section className="w-full h-[75vh]">
-          <Image
-            className="w-full h-full object-cover object-left-top"
-            src={heroImg}
-            width={5998}
-            height={2608}
-            alt="Skincare Hero Image"
-            priority
-          />
-        </section>
+        <HeroImg/>
         <NewInSection />
         <TrendingSection />
         <RecentlyViewedSection />
