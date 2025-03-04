@@ -13,7 +13,7 @@ import { BasketItem } from "./lib/definitions";
 export default function Home() {
    const [basket, setBasket] = useState<BasketItem[]>([]);
 
-   console.log(setBasket)
+   console.log("set Basket:", setBasket)
   // const addToBasket = (item: BasketItem) => {
   //   setBasket([...basket, item]);
   // };
