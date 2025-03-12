@@ -26,7 +26,7 @@ export default function Home() {
         <NewInSection /*addToBasket={addToBasket}*/ />
         <TrendingSection />
         <RecentlyViewedSection />
-        <footer>Footer</footer>
+        <footer>Footer section</footer>
       </div>
     </main>
   );
